@@ -1,9 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Title from "./component/top-title";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <Title>Home</Title>
+    <>
+      <h1 className="meie-script-regular toppage-title">Welcome to Chilie&apos;s Blogs</h1>
+      <p className="toppage-link"><Link href='/blogs'>Check New Blogs → </Link></p>
+    </>
   );
 }
