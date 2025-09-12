@@ -1,5 +1,7 @@
+import Title from "../component/top-title";
+
 export default function ContactPage() {
   return (
-    <h1>contact page</h1>
+    <Title>Contact</Title>
   )
 }

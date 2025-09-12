@@ -1,13 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #131313;
 }
 
 html,
@@ -35,6 +30,13 @@ a {
   text-decoration: none;
 }
 
+.quicksand-all {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -51,8 +53,33 @@ a {
   margin-right: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.top-title {
+  text-align: center;
+  margin: 40px;
+  color: #755d5d;
 }
+
+.blogs-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.blogs-table tr {
+  height: 60px;
+}
+
+.blogs-table th {
+  padding-right: 120px;
+  text-align: left;
+}
+
+.blogs-table thead th {
+  border-bottom: 1px solid #755d5d;
+}
+
+.blogs-table tbody tr:hover {
+  background-color: #d4d4d5;
+  cursor: pointer;
+}
+
