@@ -111,3 +111,17 @@ a {
 .blog-title {
   min-width: 500px;
 }
+
+.blog-date {
+  text-align: center;
+  margin: 40px;
+}
+
+.blog-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+}
