@@ -98,6 +98,16 @@ a {
 
 .blogs-table tbody tr:hover {
   background-color: #d4d4d5;
+}
+
+.blogs-table tbody tr a:hover {
   cursor: pointer;
 }
 
+.blogs-table tbody tr a {
+  color: #a20808;
+}
+
+.blog-title {
+  min-width: 500px;
+}

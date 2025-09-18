@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Blog } from "./type";
 import Title from "../component/top-title";
+import Link from "next/link";
 
 export default async function BlogsPage() {
   const res = await fetch('http://localhost:3000/blogs.json');
@@ -13,8 +14,9 @@ export default async function BlogsPage() {
       <table className="blogs-table">
         <thead>
           <tr>
-            <th>date</th>
-            <th>title</th>
+            <th>Date</th>
+            <th>Title</th>
+            <th></th>
           </tr>
         </thead>
         
@@ -22,7 +24,8 @@ export default async function BlogsPage() {
           {blogs.map((blog: Blog) => (
             <tr key={blog.id}>
               <td>{blog.date}</td>
-              <td>{blog.title}</td>
+              <td className="blog-title">{blog.title}</td>
+              <td><b><Link href={`./blogs/${blog.id}`}>Read</Link></b></td>
             </tr>
           ))}
         </tbody>        
